@@ -1,0 +1,107 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+              /*//////////Navbar\\\\\\\\\\*/
+.nav-bar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #7cfff632;
+    padding: 10px 5px;
+    position: fixed;
+    top:0 ;
+    left: 0;
+}
+
+.logo{
+   border-radius:10px;
+   margin-left: 30px;
+   cursor: pointer;
+}
+
+.nav-link{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link li {
+    margin-left: 25px;
+    font-weight: bold;
+}
+
+.nav-link a {
+    text-decoration: none;
+    color:cadetblue
+}
+
+.nav-link a:hover{
+    color: rgb(71, 34, 127);
+}
+
+
+/*/////////BTN\\\\\\\\\*/
+
+.btn1{
+    padding: 10px 20px;
+    margin-right: 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: chocolate;
+    color: wheat;
+    cursor: pointer;
+}
+
+/*///////////////////HERO SECTION\\\\\\\\\\\\\\\\\\\\*/
+.hero-section {
+  background-image: url('img/Backgraound1.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; 
+  width: 100%;
+
+}
+
+.hero-1{
+ min-height: 100vh; 
+  display:flex;
+  flex-direction: column;
+  justify-content: center; 
+  margin-left: 50px;
+ 
+}
+
+.hero-1 h1{
+    margin-bottom: 20px;
+    color: #897e94;
+}
+span{
+    color: green;
+}
+
+.hero-1 p{
+    font-family: initial;
+    font-size: 25px;
+}
+
+.hero-1 a{
+    margin-top: 20px;
+    width:10% ;
+    padding: 10px 20px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: chocolate;
+    color: wheat;
+}
+.hero-1 a:hover,
+.btn1:hover{
+    background-color: #897e94;
+}
+
