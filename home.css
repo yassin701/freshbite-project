@@ -7,10 +7,10 @@
 .nav-bar{
     width: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     background-color: #7cfff632;
     padding: 10px 5px;
+    justify-content: space-around;
     position: fixed;
     top:0 ;
     left: 0;
@@ -18,8 +18,8 @@
 
 .logo{
    border-radius:10px;
-   margin-left: 30px;
    cursor: pointer;
+   margin-right: 10%;
 }
 
 .nav-link{
@@ -27,6 +27,7 @@
     display: flex;
     margin: 0;
     padding: 0;
+    
 }
 
 .nav-link li {
@@ -43,19 +44,6 @@
     color: rgb(71, 34, 127);
 }
 
-
-/*/////////BTN\\\\\\\\\*/
-
-.btn1{
-    padding: 10px 20px;
-    margin-right: 20px;
-    border: none;
-    border-radius: 20px;
-    background-color: chocolate;
-    color: wheat;
-    cursor: pointer;
-}
-
 /*///////////////////HERO SECTION\\\\\\\\\\\\\\\\\\\\*/
 .hero-section {
   background-image: url('img/Backgraound1.jpg'); 
@@ -68,7 +56,7 @@
 }
 
 .hero-1{
- min-height: 100vh; 
+  min-height: 100vh; 
   display:flex;
   flex-direction: column;
   justify-content: center; 
@@ -100,8 +88,7 @@ span{
     background-color: chocolate;
     color: wheat;
 }
-.hero-1 a:hover,
-.btn1:hover{
+.hero-1 a:hover{
     background-color: #897e94;
 }
 
