@@ -14,6 +14,7 @@
     justify-content: space-around;
     position: fixed;
     height: 50px;
+    z-index: 1;
 
 }
 
@@ -102,6 +103,7 @@
 .hero-1 h1 {
     margin-bottom: 20px;
     color: #897e94;
+
 }
 
 span {
@@ -152,13 +154,7 @@ span {
         color: white;
 
     }
-
-
-   
-
 }
-
-
 
 
 /*///////////////////MENU SECTION \\\\\\\\\\\\\\\\\\\\*/
@@ -176,6 +172,7 @@ span {
     text-align: center;
     font-size: 35px;
     font-family: initial;
+    color: #897e94;
 
 }
 
@@ -202,7 +199,7 @@ span {
 }
 
 .card:hover {
-    transform: scale(1.1);
+    box-shadow: 0px 2px 4px rgb(9, 4, 4, 0.9);
 }
 
 .card-content {
@@ -235,4 +232,123 @@ span {
     text-align: center;
 
 
+}
+
+/*/////Gallery*/
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.gallery h2 {
+    margin-top: 40px;
+    padding: 40px;
+    font-size: 35px;
+    font-family: initial;
+    color: #897e94;
+
+
+}
+
+.gallery-img {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.gallery-img img {
+    width: 350px;
+    object-fit: cover;
+    height: auto;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(66, 49, 101, 0.906);
+}
+
+.gallery-img img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 128, 0, 0.4);
+
+}
+
+@media (max-width:768px) {
+    .gallery-img {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .gallery-img img {
+        width: 240px;
+    }
+
+}
+
+@media (max-width:480px) {
+    .gallery-img img {
+        width: 150px;
+    }
+}
+
+
+/*//////Footer*/
+
+.footer {
+    background-color: #f0f0f0;
+    text-align: center;
+    margin-top: 60px;
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo1 img {
+    margin: 10px;
+    cursor: pointer;
+    width: 120px;
+    height: 120px;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #897e94;
+    transition: 0.3s ease;
+}
+
+.footer-links a:hover,
+.footer-icons a:hover {
+    color: black;
+}
+
+.footer-icons a {
+    font-size: 18px;
+    margin: 0px 10px;
+    color: #897e94;
+}
+
+.footer-copy {
+    margin: 10px;
+    font-weight: bold;
+    color: #897e94;
 }
