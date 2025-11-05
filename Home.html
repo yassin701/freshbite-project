@@ -1,38 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <link rel="stylesheet" href="home.css">
     <title>Freshbite</title>
 </head>
+
 <body>
-    
-        <!--Navbar-->
-        <nav class="nav-bar">
-            <div class="logo">
-                <img src="img/logo.png" width="90px" height="90px" alt="logo">
-            </div>
-            <ul class="nav-link">
-                <li><a href="#">Home</a></li>
-                <li><a href="">Menu</a></li>
-                <li><a href="">Gallery</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-        </nav>
- 
-          <!--first-section-->
-        <section class="hero-section">
-                <div class="hero-1">
-                    <h1>Eat Clean, <span>Live Green</span> with FreshBite</h1>
-                    <p>Discover delicious and nutritious meals crafted with fresh <br> ingredients to nourish your body and delight your taste buds.</p>
-                     <a  href="#">Get Menu</a>
+
+    <!--Navbar-->
+    <nav class="nav-bar">
+        <div class="logo">
+            <img src="img/logo.png" alt="logo">
+        </div>
+        <ul class="nav-link">
+            <li><a href="#">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="">Gallery</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <!--first-section-->
+    <section class="hero-section">
+        <div class="hero-1">
+            <h1>Eat Clean, <span>Live Green</span> with FreshBite</h1>
+            <p>Discover delicious and nutritious meals crafted with fresh <br> ingredients to nourish your body and
+                delight your taste buds.</p>
+            <a href="#menu">Get Menu</a>
+        </div>
+    </section>
+
+
+    <!--second-section-->
+
+
+    <section class="card-container" id="menu">
+        <h2>Our Specials</h2>
+        <div class="title1">
+            <div class="card">
+                <img src="img/plat1.jpg" alt="plat1">
+                <div class="card-content">
+                    <h3>Vegetable Bowl</h3>
+                    <p>Protein and Vegetable Bowl</p>
                 </div>
-        </section>
-     
-         
+
+            </div>
+            <div class="card">
+                <img src="img/plat2.jpg" alt="plat2">
+                <div class="card-content">
+                    <h3>Salade</h3>
+                    <p>Mixed Green Salad with Olives</p>
+                </div>
+
+            </div>
+            <div class="card">
+                <img src="img/plat3.jpg" alt="plat3">
+                <div class="card-content">
+                    <h3>Chicken</h3>
+                    <p>Chicken and Simple Side Salad</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/plat4.png" alt="plat4">
+                <div class="card-content">
+                    <h3>Healty Soup </h3>
+                    <p>Broccoli Spinach Power Soup</p>
+                </div>
+            </div>
+        </div>
+        <a href="">View More</a>
+    </section>
 
 
 
+
+
+    <script src="script.js"></script>
 </body>
+
 </html>
