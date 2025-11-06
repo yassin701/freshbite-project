@@ -172,6 +172,7 @@ span {
     text-align: center;
     font-size: 35px;
     font-family: initial;
+    margin-top: 50px;
     color: #897e94;
 
 }
@@ -196,6 +197,7 @@ span {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 .card:hover {
@@ -246,7 +248,7 @@ span {
 }
 
 .gallery h2 {
-    margin-top: 40px;
+    margin-top: 20px;
     padding: 40px;
     font-size: 35px;
     font-family: initial;
@@ -261,11 +263,12 @@ span {
     gap: 40px;
     align-items: center;
     justify-content: center;
+    margin-bottom: 50px;
 
 }
 
 .gallery-img img {
-    width: 350px;
+    width: 300px;
     object-fit: cover;
     height: auto;
     border-radius: 10px;
