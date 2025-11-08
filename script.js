@@ -8,39 +8,67 @@ burger.addEventListener('click', () => {
 
 
 
-const form = document.querySelector('#contact');
-const inputs = document.querySelectorAll('.right input, .right textarea');
-const errors = document.querySelectorAll('.error');
 
-function isValidEmail(email) {
-    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-}
 
-form.addEventListener('submit', function (e) {
+
+/*Partie Contact*/
+const Inputname = document.getElementById('name');
+const Inputemail = document.getElementById('email');
+const BtnSend = document.getElementById('SendBtn');
+const Msg = document.getElementById('textarea');
+const Validename = document.getElementById('ValideName');
+const Valideemail = document.getElementById('ValideEmail');
+const ValideMsg = document.getElementById('ValideMsg');
+const form = document.getElementById('formMessage');
+
+
+
+
+BtnSend.addEventListener('click', function (e) {
     e.preventDefault();
 
     let allValid = true;
 
-    inputs.forEach((input, index) => {
-        if (input.value.trim() === "") {
-            errors[index].textContent = 'This field is required';
-            errors[index].style.color = 'red';
-            allValid = false;
-        } else if (input.type === "email" && !isValidEmail(input.value)) {
-            errors[index].textContent = 'Please enter a valid email';
-            errors[index].style.color = 'red';
-            allValid = false;
-        } else {
-            errors[index].textContent = '';
-        }
+    if (!Inputname.value.trim()) {
+        Validename.textContent = "This field is required"
+        Validename.style.display = "block"
+        Validename.style.color = "red"
+        allValid = false
+    } else {
+        Validename.style.display = "none"
+    }
 
-        input.value = "";
-    });
+
+    if (!Inputemail.checkValidity()) {
+        Valideemail.textContent = "Please enter a valid email"
+        Valideemail.style.display = "block"
+        Valideemail.style.color = "red"
+        allValid = false
+    } else {
+        Valideemail.style.display = "none"
+    }
+
+
+    if (!Msg.value.trim()) {
+        ValideMsg.textContent = "Message should be not empty !"
+        ValideMsg.style.display = "block"
+        ValideMsg.style.color = "red"
+        allValid = false
+    } else {
+        ValideMsg.style.display = "none"
+    }
+
 
     if (allValid) {
-        const successMsg = document.createElement('p');
-        successMsg.textContent = 'Message sent successfully!';
-        successMsg.style.color = 'green';
-        form.appendChild(successMsg);
+        form.textContent = "Message sent successfully!"
+        form.style.display = "block";
+        Inputname.value = ""
+        Inputemail.value = ""
+        Msg.value = ""
+
+    } else {
+        form.style.display = "none"
     }
+
+
 });
